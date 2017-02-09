@@ -22,7 +22,7 @@ class plotter(multiprocessing.Process):
             dataIn=self.dataQ.get()
             t=range(0,len(dataIn))
             self.ax.clear()
-            self.ax.plot(t, dataIn, linewidth=1.0, linestyle="-", color="red", label="PPG")
+            self.ax.plot(t, dataIn, linewidth=1.0, linestyle="-", color="red", label="labelHere")
             self.ax.legend(loc='upper left')
             self.ax.grid(True)
             self.ax.relim()
